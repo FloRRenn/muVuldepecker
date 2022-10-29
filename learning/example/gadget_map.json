@@ -1,0 +1,218 @@
+[
+  {
+    "id": 0,
+    "gadget_code": [
+      "VAR1, NULL, 0, NULL, 0 )",
+      "char *VAR2 = calloc( VAR1, 1 );",
+      "if( FUNC1( VAR3, VAR4, VAR2,",
+      "FUNC2( VAR5, FUNC3( VAR2 ) );",
+      "free( VAR2 );"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 1,
+    "gadget_code": [
+      "char *VAR1 = calloc( VAR2, 1 );",
+      "VAR2, NULL, 0, NULL, 0 )",
+      "if( FUNC1( VAR3, VAR4, VAR1,",
+      "FUNC2( VAR5, FUNC3( VAR1 ) );",
+      "free( VAR1 );"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 2,
+    "gadget_code": [
+      "fread(VAR1, 13, 1, VAR2);",
+      "VAR3->VAR4 = (VAR1[7] << 8) | VAR1[6];",
+      "VAR3->VAR5 = (VAR1[9] << 8) | VAR1[8];",
+      "VAR6    = 2 << (VAR1[10] & 0x07);",
+      "if (VAR1[10] & VAR7)",
+      "if (FUNC1(VAR2, VAR6, VAR8, &VAR9))",
+      "switch (FUNC2(VAR2))",
+      "fclose(VAR2);",
+      "VAR1[0] = FUNC2(VAR2);",
+      "if (VAR1[0] == 0xf9)",
+      "FUNC3(VAR2, VAR1);",
+      "fread(VAR1, 9, 1, VAR2);",
+      "if (VAR1[8] & VAR7)",
+      "VAR6 = 2 << (VAR1[8] & 0x07);",
+      "if (FUNC1(VAR2, VAR6, VAR8, &VAR9))",
+      "VAR3->VAR4 = (VAR1[5] << 8) | VAR1[4];",
+      "VAR3->VAR5 = (VAR1[7] << 8) | VAR1[6];",
+      "if (VAR3->VAR4 == 0 || VAR3->VAR5 == 0)",
+      "VAR3->VAR4, VAR3->VAR5);",
+      "fprintf(VAR10, \"\",",
+      "fclose(VAR2);",
+      "VAR11 = FUNC4(VAR2, VAR3, VAR8, VAR1[8] & VAR12);",
+      "int VAR13);",
+      "VAR11 = FUNC4(VAR2, VAR3, VAR8, VAR1[8] & VAR12);",
+      "static int\tFUNC1(VAR14 *VAR2, int VAR6, gif_cmap_t VAR8,",
+      "fclose(VAR2);",
+      "fclose(VAR2);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC5(VAR8[VAR11], VAR8[VAR11], 1);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC6(VAR8[VAR11], VAR8[VAR11], 1);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC7(VAR8[VAR11], VAR8[VAR11], 1);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC8(VAR8[VAR11], VAR8[VAR11], 1);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC9(VAR8[VAR11], 1, VAR15, VAR16);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC10(VAR8[VAR11], VAR8[VAR11], 1);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC11(VAR8[VAR11], VAR8[VAR11], 1);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC12(VAR8[VAR11], VAR8[VAR11], 1);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC13(VAR8[VAR11], VAR8[VAR11], 1);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC14(VAR8[VAR11], VAR8[VAR11], 1);",
+      "for (VAR11 = VAR6 - 1; VAR11 >= 0; VAR11 --)",
+      "FUNC15(VAR8[VAR11], VAR17, VAR18);",
+      "static int\tFUNC4(VAR14 *VAR2, VAR19 *VAR3, gif_cmap_t VAR8,",
+      "fclose(VAR2);",
+      "static int\tFUNC3(VAR14 *VAR2, unsigned char *VAR20);",
+      "if (VAR1[0] & 1)",
+      "VAR21 = VAR1[3];",
+      "if (VAR21 >= 0)"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 3,
+    "gadget_code": [
+      "WCHAR VAR1[VAR2 + 1] = {VAR3''};",
+      "if (!FUNC1(argc, argv, VAR1)) {",
+      "FUNC1(int VAR4, VAR5 *VAR6, WCHAR VAR7[VAR2 + 1])",
+      "wcsncpy(VAR7, VAR6[2], VAR2);",
+      "VAR8* VAR9 = wcsrchr(VAR7, VAR3'');"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 4,
+    "gadget_code": [
+      "FUNC1(VAR1* VAR2, const char* VAR3)",
+      "VAR4::FUNC2(VAR5, VAR2);",
+      "VAR6* VAR7 = VAR2->FUNC3();",
+      "printf(\"\", VAR7);",
+      "VAR8 = VAR7->FUNC4();",
+      "VAR7 = VAR8;",
+      "printf(\"\", VAR7);"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 5,
+    "gadget_code": [
+      "FUNC1(VAR1 *VAR2, const VAR3 *VAR4,",
+      "size_t VAR5, gint VAR6)",
+      "guchar    VAR7[256];",
+      "if (VAR5 > sizeof(VAR7) - 1)",
+      "VAR5 = sizeof(VAR7) - 1;",
+      "memcpy(VAR7, VAR4, VAR5);"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 6,
+    "gadget_code": [
+      "VAR1[0] = '';",
+      "FUNC1(VAR1, VAR2, \"%VAR3:",
+      "FUNC1(VAR1, VAR2, \"\", VAR4);",
+      "FUNC2(VAR1, \"\", VAR2);",
+      "FUNC2(VAR1, VAR5, VAR2);",
+      "FUNC2(VAR1, \"\", VAR2);",
+      "FUNC2(VAR1, VAR5, VAR2);",
+      "FUNC2(VAR1, VAR5, VAR2);",
+      "FUNC1(VAR1, VAR2, \"\", VAR6);",
+      "int VAR7 = strlen(VAR1);",
+      "vsnprintf(VAR1 + VAR7, VAR2 > VAR7 ? VAR2 - VAR7 : 0, VAR8, VAR9);",
+      "return strlen(VAR1);"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 7,
+    "gadget_code": [
+      "static int FUNC1( VAR1 *VAR2 )",
+      "char         *VAR3, *VAR4;",
+      "VAR3 = strchr( VAR5->VAR3, '' );",
+      "char *VAR6 = FUNC2( VAR5->VAR3 );",
+      "VAR6[ VAR3 - VAR5->VAR3 ] = 0;",
+      "VAR3 = VAR5->VAR3;",
+      "VAR7 = strchr( VAR6, '' );",
+      "*VAR7 = 0;",
+      "VAR3 = VAR5->VAR3 + (VAR7 - VAR6) + 1;",
+      "FUNC3( VAR5, VAR3, VAR8, VAR9, VAR10);",
+      "VAR11 = FUNC4( &VAR4, \"",
+      "free( VAR4 );",
+      "FUNC5( VAR12, VAR3, sizeof( VAR12 ) );",
+      "VAR7 = strchr( VAR3, '' );",
+      "VAR11 = FUNC4( &VAR4, \"",
+      "free( VAR4 );",
+      "static void FUNC3( VAR13 *VAR5, char *VAR3,",
+      "VAR11 = FUNC4( &VAR4, \"",
+      "free( VAR4 );"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 8,
+    "gadget_code": [
+      "static int FUNC1( VAR1 *VAR2 )",
+      "char         *VAR3, *VAR4;",
+      "VAR3 = strchr( VAR5->VAR3, '' );",
+      "char *VAR6 = FUNC2( VAR5->VAR3 );",
+      "VAR6[ VAR3 - VAR5->VAR3 ] = 0;",
+      "VAR3 = VAR5->VAR3;",
+      "VAR7 = strchr( VAR6, '' );",
+      "*VAR7 = 0;",
+      "VAR3 = VAR5->VAR3 + (VAR7 - VAR6) + 1;",
+      "FUNC3( VAR5, VAR3, VAR8, VAR9, VAR10);",
+      "VAR11 = FUNC4( &VAR4, \"",
+      "free( VAR4 );",
+      "FUNC5( VAR12, VAR3, sizeof( VAR12 ) );",
+      "VAR7 = strchr( VAR3, '' );",
+      "VAR11 = FUNC4( &VAR4, \"",
+      "free( VAR4 );",
+      "static void FUNC3( VAR13 *VAR5, char *VAR3,",
+      "VAR11 = FUNC4( &VAR4, \"",
+      "free( VAR4 );"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 9,
+    "gadget_code": [
+      "VAR1[VAR2] = '';",
+      "VAR3 = VAR1 + FUNC1(VAR4);",
+      "VAR3++;",
+      "while (*VAR3 && isspace(*VAR3))"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 10,
+    "gadget_code": [
+      "VAR1[VAR2] = '';",
+      "VAR3 = VAR1 + FUNC1(VAR4);",
+      "VAR3++;",
+      "while (*VAR3 && isspace(*VAR3))"
+    ],
+    "exit_code": 0
+  },
+  {
+    "id": 11,
+    "gadget_code": [
+      "FUNC1(const char *VAR1,",
+      "va_start(VAR2, VAR1);",
+      "vfprintf(VAR3, VAR1, VAR2);"
+    ],
+    "exit_code": 0
+  }
+]
