@@ -16,5 +16,5 @@ git add .
 git commit -m "thông điệp"
 git remote add origin https://github.com/FloRRenn/muVuldepecker.git # dùng khi push lần đầu
 git branch -M <tên branch> # branch learning hoặc detecting
-git push -u origin main
+git push -u origin <tên branch>
 ```
