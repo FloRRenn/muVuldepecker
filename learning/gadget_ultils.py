@@ -5,6 +5,8 @@
 import re
 from keywords_data.default_keywords import *
 
+function_regex = re.compile('FUNC(\d)+')
+
 # Task: 
 #   Input : Mảng string chứa gadget_code code, mỗi phần tử là 1 dòng của gadget_code code
 #   Output : Mảng string chứa code gagdet đã modify lại tên gọi của biến và hàm
@@ -123,7 +125,7 @@ def extract_modify_gadget_code(filename):
     # Mảng lưu gadget code sau khi đã modify
     gadget_codes_map = []
     
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding = "utf-8") as f:
         raw_gadget_code = []
         exit_code = 0
         

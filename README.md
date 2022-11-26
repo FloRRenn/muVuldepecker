@@ -5,7 +5,7 @@
 2. learning
 3. detecting
 ```
-# Phân công:
+#n Phân công:
     - Learning: Tấn, Lan, 
     - Detecting: No one
 
