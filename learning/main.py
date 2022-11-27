@@ -4,7 +4,7 @@ from blstm import BLSTM
 import time
             
 if __name__ == '__main__':
-    filename = "./dataset/gadget_code/cwe119_cgd.txt"
+    filename = "learning/dataset/gadget_code/cwe399_cgd.txt"
     
     starttime = time.time()
     
@@ -24,3 +24,5 @@ if __name__ == '__main__':
     print("==> Total time: " + str(endtime - starttime))
     
     bltsm_.test()
+    
+    

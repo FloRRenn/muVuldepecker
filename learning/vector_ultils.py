@@ -107,5 +107,6 @@ class Vector:
     
     def train_word2vec(self, tokens):
         model = Word2Vec(tokens, min_count = 1, vector_size = self.vector_size, sg = 1)
+        model.save("word2vec.model")
         return model.wv
     
