@@ -52,17 +52,17 @@ class BLSTM:
         self.model.save_weights(self.name + "_model.h5")
 
 
-    def test(self):
-        self.model.load_weights(self.name + "_model.h5")
+    def predict(self, modelname):
+        self.model.load_weights(modelname)
         values = self.model.evaluate(self.X_test, self.y_test, batch_size=self.batch_size)
         print("Accuracy is...", values[1])
-        predictions = (self.model.predict(self.X_test, batch_size=self.batch_size)).round()
+        # predictions = (self.model.predict(self.X_test, batch_size=self.batch_size)).round()
 
-        tn, fp, fn, tp = confusion_matrix(np.argmax(self.y_test, axis=1), np.argmax(predictions, axis=1)).ravel()
-        print('False positive rate is...', fp / (fp + tn))
-        print('False negative rate is...', fn / (fn + tp))
-        recall = tp / (tp + fn)
-        print('True positive rate is...', recall)
-        precision = tp / (tp + fp)
-        print('Precision is...', precision)
-        print('F1 score is...', (2 * precision * recall) / (precision + recall))
+        # tn, fp, fn, tp = confusion_matrix(np.argmax(self.y_test, axis=1), np.argmax(predictions, axis=1)).ravel()
+        # print('False positive rate is...', fp / (fp + tn))
+        # print('False negative rate is...', fn / (fn + tp))
+        # recall = tp / (tp + fn)
+        # print('True positive rate is...', recall)
+        # precision = tp / (tp + fp)
+        # print('Precision is...', precision)
+        # print('F1 score is...', (2 * precision * recall) / (precision + recall))
