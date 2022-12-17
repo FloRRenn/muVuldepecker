@@ -121,7 +121,7 @@ def modify_gadget(gadget_code):
 #               "exit_code" : 0 or 1
 #           },
 #       ]
-def extract_modify_gadget_code(filename):   
+def extract_modify_gadget_code(filename) -> list:   
     # Mảng lưu gadget code sau khi đã modify
     gadget_codes_map = []
     
@@ -140,9 +140,11 @@ def extract_modify_gadget_code(filename):
                     "gadget_code" : gadget_code,
                     "exit_code" : exit_code
                 }
+                
+                # Store gagdet code in List
                 gadget_codes_map.append(to_dict)
                 
-                # reset
+                # reset, move to next gadget code program
                 raw_gadget_code = []
                 exit_code = 0
             

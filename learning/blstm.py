@@ -31,6 +31,9 @@ class BLSTM:
         
         self.class_weight = compute_class_weight(class_weight = 'balanced', classes = [0, 1], y = labels)
         
+        self.model = self.init_model(vectors)
+
+    def init_model(self, vectors):
         model = Sequential()
         model.add(Bidirectional(LSTM(300), input_shape=(vectors.shape[1], vectors.shape[2])))
         model.add(Dense(300))
@@ -44,18 +47,19 @@ class BLSTM:
         # Lower learning rate to prevent divergence
         adamax = Adamax(lr = 0.002)
         model.compile(adamax, 'categorical_crossentropy', metrics = ['accuracy'])
-        self.model = model
-
-
+        return model
+    
     def train(self):
-        self.model.fit(self.X_train, self.y_train, batch_size=self.batch_size, epochs=4, class_weight=dict(enumerate(self.class_weight)))
-        self.model.save_weights(self.name + "_model.h5")
-
+        self.model.fit(self.X_train, self.y_train, batch_size=self.batch_size, 
+                       epochs=4, class_weight=dict(enumerate(self.class_weight)))
+        self.model.save_weights(self.name + ".h5")
 
     def predict(self, modelname):
         self.model.load_weights(modelname)
         values = self.model.evaluate(self.X_test, self.y_test, batch_size=self.batch_size)
         print("Accuracy is...", values[1])
+        
+        
         # predictions = (self.model.predict(self.X_test, batch_size=self.batch_size)).round()
 
         # tn, fp, fn, tp = confusion_matrix(np.argmax(self.y_test, axis=1), np.argmax(predictions, axis=1)).ravel()
